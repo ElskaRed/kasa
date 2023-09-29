@@ -1,6 +1,12 @@
+import Navigation from "../Navigation/index";
+import logo from '../assets/images/logo-header.png'
+
 const Header = () => {
     return(
-        <h2>header ???</h2>
+        <div className="header">
+            <img src={logo} alt="Logo Kasa" className="logo-header" />
+            <Navigation />
+        </div>
     );
 };
 

@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';   
-import MyRoutes from './Components/MyRoutes';
+import App from './App';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MyRoutes />
+    <App />
   </React.StrictMode>
 );
