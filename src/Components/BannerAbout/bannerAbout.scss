@@ -1,0 +1,10 @@
+@import '../../style/var.scss';
+
+.banner {
+    @include banner;
+    background: $bannerAbout;
+
+    &__darken {
+        @include darken;
+    }
+}

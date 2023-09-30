@@ -1,6 +1,8 @@
+import BannerAbout from "../../Components/BannerAbout";
+
 const About = () => {
     return (
-        <h1>Hello</h1>
+        <BannerAbout />
     );
 };
 

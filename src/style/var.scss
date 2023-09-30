@@ -1,0 +1,27 @@
+$orange: #FF6060;
+$bannerHome: url(../assets/images/bannerHome.png) no-repeat left center;
+$bannerAbout: url(../assets/images/bannerAbout.png) no-repeat left center;
+
+
+@mixin darken {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 25px;
+    opacity: 0.3;
+    z-index: 0;
+}
+
+@mixin banner {
+    width: 1240px;
+    height: 223px;
+    margin: auto;
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+}
+

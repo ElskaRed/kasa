@@ -1,0 +1,20 @@
+@import '../../style/var.scss';
+
+.banner {
+    @include banner;
+    background: $bannerHome;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &__title {
+        color: white;
+        font-size: 3em;
+        z-index: 1;
+    }
+
+    &__darken {
+        @include darken;
+    }
+}

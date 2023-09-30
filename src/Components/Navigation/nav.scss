@@ -1,0 +1,17 @@
+@import '../../style/var.scss';
+
+.navigation {
+    display: flex;
+    gap: 57px;
+    
+    &--home,
+    &--about {
+        color: $orange;
+        text-decoration: none;
+        font-size: 1.5em;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
