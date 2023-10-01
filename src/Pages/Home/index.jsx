@@ -1,9 +1,12 @@
-import Banner from '../../Components/Banner'
+import Banner from '../../Components/Banner';
+import Gallery from '../../Components/Gallery';
+import './home.scss';
 
 const Home = () => {
     return (
-        <div>
+        <div className="wrapper">
             <Banner />
+            <Gallery />
         </div>
     );
 };

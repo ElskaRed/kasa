@@ -1,6 +1,6 @@
 $orange: #FF6060;
-$bannerHome: url(../assets/images/bannerHome.png) no-repeat left center;
-$bannerAbout: url(../assets/images/bannerAbout.png) no-repeat left center;
+$bannerHome: url(../assets/images/bannerHome.png) no-repeat center;
+$bannerAbout: url(../assets/images/bannerAbout.png) no-repeat center;
 
 
 @mixin darken {
@@ -15,13 +15,24 @@ $bannerAbout: url(../assets/images/bannerAbout.png) no-repeat left center;
     z-index: 0;
 }
 
-@mixin banner {
-    width: 1240px;
-    height: 223px;
+@mixin wrapperHome {
+    max-width: 1440px;
     margin: auto;
-    border-radius: 25px;
     margin-top: 40px;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+@mixin banner {
+    height: 223px;
+    border-radius: 25px;
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
     position: relative;
 }
 
