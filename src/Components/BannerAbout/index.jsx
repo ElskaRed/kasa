@@ -2,8 +2,8 @@ import './bannerAbout.scss';
 
 const BannerAbout = () => {
     return (
-        <div className="banner">
-            <div className="banner__darken"></div>
+        <div className="bannerAbout">
+            <div className="bannerAbout__darken"></div>
         </div>
     );
 };
