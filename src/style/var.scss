@@ -15,7 +15,7 @@ $bannerAbout: url(../assets/images/bannerAbout.png) no-repeat center;
     z-index: 0;
 }
 
-@mixin wrapperHome {
+@mixin wrapper {
     max-width: 1440px;
     margin: auto;
     margin-top: 40px;

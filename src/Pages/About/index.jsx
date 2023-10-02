@@ -1,8 +1,11 @@
 import BannerAbout from "../../Components/BannerAbout";
+import './about.scss';
 
 const About = () => {
     return (
-        <BannerAbout />
+        <div className="wrapper">
+            <BannerAbout />
+        </div>
     );
 };
 
