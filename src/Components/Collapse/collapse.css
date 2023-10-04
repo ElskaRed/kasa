@@ -1,0 +1,28 @@
+.collapse {
+  width: 100%;
+  margin: 20px 0;
+  background-color: #F6F6F6;
+  border-radius: 5px;
+}
+.collapse__top {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 10px 15px;
+  background-color: #FF6060;
+  border-radius: 5px;
+  color: white;
+}
+.collapse__top__title {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+.collapse__top__arrow {
+  cursor: pointer;
+}
+.collapse__text {
+  color: #FF6060;
+  padding: 20px;
+  font-size: 1.1em;
+}/*# sourceMappingURL=collapse.css.map */

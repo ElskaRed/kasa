@@ -1,5 +1,11 @@
 @import '../../style/var.scss';
 
-.wrapper {
+.wrapper-about {
     @include wrapper;
+
+    &__collapse {
+        padding-left: 110px;
+        padding-right: 110px;
+        margin-top: 20px;
+    }
 }

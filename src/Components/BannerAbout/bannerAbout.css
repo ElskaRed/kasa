@@ -1,13 +1,13 @@
-.banner {
-  width: 1240px;
+.bannerAbout {
   height: 223px;
-  margin: auto;
   border-radius: 25px;
-  margin-bottom: 40px;
+  width: 100%;
+  margin-left: 100px;
+  margin-right: 100px;
   position: relative;
-  background: url(../assets/images/bannerAbout.png) no-repeat left center;
+  background: url(../assets/images/bannerAbout.png) no-repeat center;
 }
-.banner__darken {
+.bannerAbout__darken {
   background-color: black;
   position: absolute;
   top: 0;

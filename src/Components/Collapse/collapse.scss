@@ -1,0 +1,36 @@
+@import '../../style/var.scss';
+
+
+.collapse {
+    width: 100%;
+    margin: 20px 0;
+    background-color: #F6F6F6;
+    border-radius: 5px;
+
+    &__top {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px 10px 15px;
+        background-color: $orange;
+        border-radius: 5px;
+        color: white;
+
+        &__title {
+            font-weight: 500;
+            font-size: 1.5em;
+        }
+
+        &__arrow {
+            cursor: pointer;
+        }
+    }
+
+    &__text {
+        color: $orange;
+        padding: 20px;
+        font-size: 1.1em;
+    }
+}
+

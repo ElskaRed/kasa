@@ -1,11 +1,11 @@
 .banner {
-  width: 1240px;
   height: 223px;
-  margin: auto;
   border-radius: 25px;
-  margin-bottom: 40px;
+  width: 100%;
+  margin-left: 100px;
+  margin-right: 100px;
   position: relative;
-  background: url(../assets/images/bannerHome.png) no-repeat left center;
+  background: url(../assets/images/bannerHome.png) no-repeat center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,6 +14,8 @@
   color: white;
   font-size: 3em;
   z-index: 1;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .banner__darken {
   background-color: black;

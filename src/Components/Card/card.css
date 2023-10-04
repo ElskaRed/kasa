@@ -1,1 +1,20 @@
-/*# sourceMappingURL=card.css.map */
+.card {
+  height: 340px;
+  border-radius: 10px;
+  position: relative;
+}
+.card__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+.card__title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  font-size: 1.1em;
+  width: 50%;
+}/*# sourceMappingURL=card.css.map */

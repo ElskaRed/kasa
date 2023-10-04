@@ -1,16 +1,18 @@
 import BannerAbout from "../../Components/BannerAbout";
 import './about.scss';
-import Dropdown from '../../Components/Dropdown';
+import Collapse from '../../Components/Collapse';
+import aboutText from '../../assets/data/about.json';
 
 const About = () => {
     return (
-        <div className="wrapper">
+        <div className="wrapper-about">
             <BannerAbout />
-            <div className="wrapper__dropdown">
-                <Dropdown />
-                <Dropdown />
-                <Dropdown />
-                <Dropdown />
+            <div className="wrapper-about__collapse">
+                {aboutText.map((about) => {
+                    return(
+                        <Collapse key={about.title} title={about.title} text={about.text}/>
+                    );
+                })}
             </div>
         </div>
     );

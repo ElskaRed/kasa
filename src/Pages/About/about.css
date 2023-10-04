@@ -1,1 +1,16 @@
-/*# sourceMappingURL=about.css.map */
+.wrapper-about {
+  max-width: 1440px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.wrapper-about__collapse {
+  padding-left: 110px;
+  padding-right: 110px;
+  margin-top: 20px;
+}/*# sourceMappingURL=about.css.map */
