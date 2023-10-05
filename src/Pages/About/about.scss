@@ -1,11 +1,13 @@
 @import '../../style/var.scss';
 
-.wrapper-about {
+.about {
     @include wrapper;
+    min-height: calc(100vh - 401px);
 
     &__collapse {
         padding-left: 110px;
         padding-right: 110px;
         margin-top: 50px;
     }
+
 }
