@@ -3,9 +3,6 @@
 
 .collapse {
     width: 100%;
-    margin: 20px 0;
-    background-color: #F6F6F6;
-    border-radius: 5px;
 
     &__top {
         display: flex;
@@ -16,6 +13,7 @@
         background-color: $orange;
         border-radius: 5px;
         color: white;
+        z-index: 1;
 
         &__title {
             font-weight: 500;
@@ -24,6 +22,8 @@
 
         &__arrow {
             cursor: pointer;
+            transform: rotate(0deg);
+            transition: transform 0.4s ease-in-out;
         }
     }
 
@@ -31,6 +31,21 @@
         color: $orange;
         padding: 20px;
         font-size: 1.1em;
+        background-color: #F6F6F6;
+        border-radius: 5px;
+        position: relative;
+        z-index: -1;
+        margin-top: -5px;
+        margin-bottom: 20px;
+        overflow: hidden;
     }
 }
 
+.arrow-down {
+    transform: rotate(180deg);
+    transition: transform 0.4s ease-in-out;
+}
+
+.text-down {
+    animation: slide-down 2s ease-in-out;
+}

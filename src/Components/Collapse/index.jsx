@@ -11,10 +11,15 @@ const Collapse = ({ title, text }) => {
     return(
         <div className="collapse">
             <div className="collapse__top">
-                <h2 className="collapse__top__title">{ title }</h2>
-                <img className="collapse__top__arrow" src={ arrow } alt="flèche" onClick={toggleState} />
+                <h2 className="collapse__top__title">{title}</h2>
+                <img
+                    className={`collapse__top__arrow ${toggle ? 'arrow-down' : ''}`}
+                    src={arrow}
+                    alt="flèche"
+                    onClick={toggleState}
+                />
             </div>
-            <p className="collapse__text">{ text }</p>
+            <p className={`collapse__text ${toggle ? 'text-down' : ''}`}>{text}</p>
         </div>
     );
     
