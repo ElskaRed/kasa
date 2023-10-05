@@ -25,6 +25,11 @@
             transform: rotate(0deg);
             transition: transform 0.4s ease-in-out;
         }
+
+        &__arrow.arrow-down {
+            transform: rotate(180deg);
+            transition: transform 0.4s ease-in-out;
+        }
     }
 
     &__text {
@@ -37,15 +42,18 @@
         z-index: -1;
         margin-top: -5px;
         margin-bottom: 20px;
+        max-height: 0;
+        opacity: 0;
         overflow: hidden;
+        transition: max-height 0.5s ease-in-out, opacity 0.4s ease-in;
+    }
+
+    &__text.text-down {
+        opacity: 1;
+        max-height: 200px;
+        transition: max-height 0.5s ease-in-out, opacity 0.4s ease-in;
     }
 }
 
-.arrow-down {
-    transform: rotate(180deg);
-    transition: transform 0.4s ease-in-out;
-}
 
-.text-down {
-    animation: slide-down 2s ease-in-out;
-}
+
