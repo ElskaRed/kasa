@@ -41,17 +41,20 @@
         position: relative;
         z-index: -1;
         margin-top: -5px;
-        margin-bottom: 20px;
+        margin-bottom: 0;
         max-height: 0;
         opacity: 0;
         overflow: hidden;
-        transition: max-height 0.5s ease-in-out, opacity 0.4s ease-in;
+        transform: translateY(-30px);
+        transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in, transform 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
     }
 
     &__text.text-down {
         opacity: 1;
         max-height: 200px;
-        transition: max-height 0.5s ease-in-out, opacity 0.4s ease-in;
+        transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in, transform 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
+        transform: translateY(0);
+        margin-bottom: 30px;
     }
 }
 
