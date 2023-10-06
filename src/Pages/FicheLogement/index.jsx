@@ -21,12 +21,12 @@ const FicheLogement = () => {
             <section className="fiche__details">
                 <div className="infos">
                     <div className="infos__lieu">
-                        <h1 className="infos__lieu__title">Un très très beau titre</h1>
-                        <p className="infos__lieu__location">Un super endroit</p>
+                        <h1 className="infos__lieu__title">{ficheLogement?.title}</h1>
+                        <p className="infos__lieu__location">{ficheLogement?.location}</p>
                         <div className="infos__lieu__tags">
-                            <p className="tag">tag1</p>
-                            <p className="tag">tag2</p>
-                            <p className="tag">tag2</p>
+                            {ficheLogement?.tags.map((tag, index) => (
+                                    <p key={index} className="tag">{tag}</p>
+                            ))}
                         </div>
                     </div>
                     <div className="infos__bonus">
