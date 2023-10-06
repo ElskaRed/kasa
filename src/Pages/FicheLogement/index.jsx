@@ -3,11 +3,13 @@ import Carrousel from '../../Components/Carrousel';
 import DataLogements from '../../assets/data/logements.json';
 import { useParams, Navigate } from "react-router-dom";
 import Collapse from '../../Components/Collapse';
+import Host from '../../Components/Host';
 
 
 const FicheLogement = () => {
     const { id } = useParams();
     const ficheLogement = DataLogements.find((logement) => logement.id === id);
+    
 
     if (!ficheLogement) {
         return <Navigate to="/error" />;
@@ -28,7 +30,12 @@ const FicheLogement = () => {
                         </div>
                     </div>
                     <div className="infos__bonus">
-                        <p className="infos__bonus--1">Un riche</p>
+                        <div className="infos__bonus--1">
+                        <Host
+                            name={ficheLogement?.host.name}
+                            picture={ficheLogement?.host.picture}
+                        />
+                        </div>
                         <p className="infos__bonus--2">Notation du bien de ce riche</p>
                     </div>
                 </div>

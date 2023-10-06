@@ -1,10 +1,10 @@
-import './proprio.scss';
+import './host.scss';
 
 const Host = (props) => {
     return(
         <div className="host">
-            <p className="host__name">{props.proprioNom}</p>
-            <img src={props.proprioImg} alt={props.id} />
+            <p className="host__name">{props.name}</p>
+            <img className="host__picture" src={props.picture} alt="Propriétaire du bien" />
         </div>
     )
 }
