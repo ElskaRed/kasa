@@ -10,6 +10,13 @@ import Rate from '../../Components/Rate';
 const FicheLogement = () => {
     const { id } = useParams();
     const ficheLogement = DataLogements.find((logement) => logement.id === id);
+    const listeEquipements = ficheLogement?.equipments.map((equipment, i) => {
+        return (
+          <ul key={i}>
+            <li>{equipment}</li>
+          </ul>
+        );
+      });
     
 
     if (!ficheLogement) {
@@ -31,20 +38,24 @@ const FicheLogement = () => {
                         </div>
                     </div>
                     <div className="infos__bonus">
-                        <div className="infos__bonus--1">
                         <Host
                             name={ficheLogement?.host.name}
                             picture={ficheLogement?.host.picture}
                         />
-                        </div>
-                        <div className="infos__bonus--2">
-                            <Rate rating={ficheLogement?.rating}/>
-                        </div>
+                        <Rate rating={ficheLogement?.rating}/>
                     </div>
                 </div>
                 <div className="collapses">
-                    <Collapse />
-                    <Collapse />
+                    <Collapse 
+                        className="collapses__comp"
+                        title="Description"
+                        text={ficheLogement?.description}
+                    />
+                    <Collapse 
+                        className="collapses__comp"
+                        title="Équipements"
+                        text={listeEquipements}
+                    />
                 </div>
             </section>
         </div>
