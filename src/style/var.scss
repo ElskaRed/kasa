@@ -5,11 +5,7 @@ $bannerAbout: url(../assets/images/bannerAbout.png) no-repeat center;
 
 @mixin darken {
     background-color: black;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+    @include absoluteFull;
     border-radius: 25px;
     opacity: 0.3;
     z-index: 0;
@@ -34,4 +30,19 @@ $bannerAbout: url(../assets/images/bannerAbout.png) no-repeat center;
     margin-left: 100px;
     margin-right: 100px;
     position: relative;
+}
+
+@mixin absoluteFull {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@mixin arrow {
+    position: absolute;
+    top: 40%;
+    z-index: 1;
+    cursor: pointer;
 }

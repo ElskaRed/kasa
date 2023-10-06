@@ -1,0 +1,39 @@
+@import '../../style/var.scss';
+
+.carrousel {
+    width: 100%;
+    position: relative;
+    height: 415px;
+    overflow: hidden;
+    border-radius: 25px;
+    z-index: 0;
+
+    &__left-arrow {
+        right: 2%;
+        @include arrow;
+    }
+
+    &__right-arrow {
+        left: 2%;
+        @include arrow;
+
+    }
+}
+
+.slider {
+    @include absoluteFull;
+
+    &__photo {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__tracker {
+        position: absolute;
+        bottom: 5%;
+        right: 48%;
+        color: white;
+        font-size: 1.1em;
+    }
+}
