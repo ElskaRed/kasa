@@ -4,6 +4,7 @@ import DataLogements from '../../assets/data/logements.json';
 import { useParams, Navigate } from "react-router-dom";
 import Collapse from '../../Components/Collapse';
 import Host from '../../Components/Host';
+import Rate from '../../Components/Rate';
 
 
 const FicheLogement = () => {
@@ -36,7 +37,9 @@ const FicheLogement = () => {
                             picture={ficheLogement?.host.picture}
                         />
                         </div>
-                        <p className="infos__bonus--2">Notation du bien de ce riche</p>
+                        <div className="infos__bonus--2">
+                            <Rate rating={ficheLogement?.rating}/>
+                        </div>
                     </div>
                 </div>
                 <div className="collapses">
