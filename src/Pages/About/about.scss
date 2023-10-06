@@ -1,7 +1,7 @@
 @import '../../style/var.scss';
 
 .about {
-    @include wrapper;
+    @include wrapper(40px);
     min-height: calc(100vh - 401px);
 
     &__collapse {

@@ -1,5 +1,64 @@
 @import '../../style/var.scss';
 
 .fiche {
-    @include wrapper;
+    @include wrapper(15px);
+
+    &__details {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+.infos {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &__lieu {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        &__title {
+            font-size: 2.25em;
+            color: $orange;
+        }
+
+        &__location {
+            font-size: 1.1em;
+            color: $orange;
+        }
+
+        &__tags {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            color: white;
+            margin-top: 20px;
+        }
+    }
+
+    &__bonus {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 15px;
+    }
+
+}
+
+.tag {
+    background-color: $orange;
+    border-radius: 10px;
+    padding: 3px 30px;
+    font-size: 0.9em;
+}
+
+.collapses {
+    display: flex;
+    flex-direction: row;
+    gap: 76px;
+    font-size: 1.1em;;
 }

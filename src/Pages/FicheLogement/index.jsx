@@ -2,6 +2,8 @@ import './fiche.scss';
 import Carrousel from '../../Components/Carrousel';
 import DataLogements from '../../assets/data/logements.json';
 import { useParams, Navigate } from "react-router-dom";
+import Collapse from '../../Components/Collapse';
+
 
 const FicheLogement = () => {
     const { id } = useParams();
@@ -14,6 +16,27 @@ const FicheLogement = () => {
     return(
         <div className="fiche">
             <Carrousel slides={ficheLogement?.pictures} />
+            <section className="fiche__details">
+                <div className="infos">
+                    <div className="infos__lieu">
+                        <h1 className="infos__lieu__title">Un très très beau titre</h1>
+                        <p className="infos__lieu__location">Un super endroit</p>
+                        <div className="infos__lieu__tags">
+                            <p className="tag">tag1</p>
+                            <p className="tag">tag2</p>
+                            <p className="tag">tag2</p>
+                        </div>
+                    </div>
+                    <div className="infos__bonus">
+                        <p className="infos__bonus--1">Un riche</p>
+                        <p className="infos__bonus--2">Notation du bien de ce riche</p>
+                    </div>
+                </div>
+                <div className="collapses">
+                    <Collapse />
+                    <Collapse />
+                </div>
+            </section>
         </div>
     )
 };
