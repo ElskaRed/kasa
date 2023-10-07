@@ -3,6 +3,7 @@
 
 .collapse {
     width: 100%;
+    margin-bottom: -12px;
 
     &__top {
         display: flex;
@@ -14,11 +15,25 @@
         border-radius: 5px;
         color: white;
         z-index: 1;
+        @media screen and (max-width: $bp) {
+            padding: 10px;
+        }
+
+        &__title {
+            font-size: 1.5em;
+
+            @media screen and (max-width: $bp) {
+                font-size: 0.8em;
+            }
+        }
 
         &__arrow {
             cursor: pointer;
             transform: rotate(0deg);
             transition: transform 0.4s ease-in-out;
+            @media screen and (max-width: $bp) {
+                height: 11px;
+            }
         }
 
         &__arrow.arrow-down {
@@ -44,11 +59,15 @@
         overflow: hidden;
         transform: translateY(-30px);
         transition: max-height 0.6s ease-in-out, opacity 0.5s ease-in, transform 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
+
+        @media screen and (max-width: $bp) {
+            font-size: 0.75em;    
+        }
     }
 
     &__text.text-down {
         opacity: 1;
-        max-height: 200px;
+        max-height: 1000px;
         transition: max-height 0.6s ease-in-out, opacity 0.3s ease-in, transform 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
         transform: translateY(0);
         margin-bottom: 30px;
