@@ -1,9 +1,7 @@
 @import '../../style/var.scss';
 
 .host {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
+    @include flex(row, 15px);
     align-items: center;
     justify-content: flex-end;
 

@@ -1,9 +1,10 @@
 import './banner.scss';
 
-const Banner = () => {
+const Banner = (props) => {
     return (
         <div className="banner">
-            <h1 className="banner__title">Chez vous, partout et ailleurs</h1>
+            <img src={props.img} alt="Bannière" className="banner__img"/>
+            <h1 className="banner__title">{props.title}</h1>
             <div className="banner__darken"></div>
         </div>
     );

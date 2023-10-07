@@ -1,12 +1,16 @@
-import BannerAbout from "../../Components/BannerAbout";
+import Banner from "../../Components/Banner";
 import './about.scss';
 import Collapse from '../../Components/Collapse';
 import aboutText from '../../assets/data/about.json';
+import bannerAbout from '../../assets/images/bannerAbout.png';
 
 const About = () => {
     return (
         <div className="about">
-            <BannerAbout />
+            <Banner
+                img={bannerAbout}
+                title=''
+            />
             <div className="about__collapse">
                 {aboutText.map((about) => {
                     return(

@@ -1,9 +1,7 @@
 @import '../../style/var.scss';
 
 .error {
-    display: flex;
-    flex-direction: column;
-    gap: 139px;
+    @include flex(column, 139px);
     align-items: center;
     padding: 139px 0px;
     color: $orange;

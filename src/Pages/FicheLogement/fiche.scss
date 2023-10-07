@@ -17,9 +17,7 @@
     align-items: flex-start;
 
     &__lieu {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
+        @include flex(column, 5px);
 
         &__title {
             font-size: 2.25em;
@@ -32,19 +30,15 @@
         }
 
         &__tags {
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
+            @include flex(row, 10px);
             color: white;
             margin-top: 20px;
         }
     }
 
     &__bonus {
-        display: flex;
-        flex-direction: column;
+        @include flex(column, 15px);
         align-items: flex-end;
-        gap: 15px;
     }
 
 }
@@ -57,9 +51,7 @@
 }
 
 .collapses {
-    display: flex;
-    flex-direction: row;
-    gap: 76px;
+    @include flex(row, 76px);
 
     &__comp {
         font-size: 1.1em;
