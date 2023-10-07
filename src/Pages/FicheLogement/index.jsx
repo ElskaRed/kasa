@@ -12,8 +12,8 @@ const FicheLogement = () => {
     const ficheLogement = DataLogements.find((logement) => logement.id === id);
     const listeEquipements = ficheLogement?.equipments.map((equipment, i) => {
         return (
-          <ul key={i}>
-            <li>{equipment}</li>
+          <ul className="equiplist" key={i}>
+            <li className="equiplist__line">{equipment}</li>
           </ul>
         );
       });
@@ -50,11 +50,13 @@ const FicheLogement = () => {
                         className="collapses__comp"
                         title="Description"
                         text={ficheLogement?.description}
+                        class="medium"
                     />
                     <Collapse 
                         className="collapses__comp"
                         title="Équipements"
                         text={listeEquipements}
+                        class="medium"
                     />
                 </div>
             </section>

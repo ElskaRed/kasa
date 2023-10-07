@@ -2,7 +2,7 @@ import './collapse.scss';
 import { useState } from "react";
 import arrow from '../../assets/images/arrow-up.svg';
 
-const Collapse = ({ title, text }) => {
+const Collapse = (props) => {
     const [toggle, setToggle] = useState(false);
     const toggleState = () => {
 		setToggle(!toggle);
@@ -11,7 +11,7 @@ const Collapse = ({ title, text }) => {
     return(
         <div className="collapse">
             <div className="collapse__top">
-                <h2 className="collapse__top__title">{title}</h2>
+                <h2 className={`collapse__top__title ${props.class}`}>{props.title}</h2>
                 <img
                     className={`collapse__top__arrow ${toggle ? 'arrow-down' : ''}`}
                     src={arrow}
@@ -19,7 +19,7 @@ const Collapse = ({ title, text }) => {
                     onClick={toggleState}
                 />
             </div>
-            <p className={`collapse__text ${toggle ? 'text-down' : ''}`}>{text}</p>
+            <div className={`collapse__text ${toggle ? 'text-down' : ''}`}>{props.text}</div>
         </div>
     );
     

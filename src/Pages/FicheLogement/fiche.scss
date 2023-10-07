@@ -65,3 +65,11 @@
         font-size: 1.1em;
     }
 }
+
+.equiplist {
+    list-style: none;
+
+    &__line {
+        font-weight: 400;
+    }
+}

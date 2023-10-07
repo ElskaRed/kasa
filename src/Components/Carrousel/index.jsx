@@ -17,18 +17,24 @@ const Carrousel = ({ slides }) => {
 
     return(
         <section className="carrousel">
-            <img
-                src={previous}
-                alt="flèche gauche"
-                onClick={previousSlide}
-                className="carrousel__left-arrow"
-            />
-            <img
-                src={next}
-                alt="flèche droite"
-                onClick={nextSlide}
-                className="carrousel__right-arrow"
-            />
+            
+            {length > 1 && (
+                <img
+                    src={previous}
+                    alt="flèche gauche"
+                    onClick={previousSlide}
+                    className="carrousel__left-arrow"
+                />
+            )}
+
+            {length > 1 && (
+                <img
+                    src={next}
+                    alt="flèche droite"
+                    onClick={nextSlide}
+                    className="carrousel__right-arrow"
+                />
+            )}
 
             {slides.map((slide, index) => {
                 return (

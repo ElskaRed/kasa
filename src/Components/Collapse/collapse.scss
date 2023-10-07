@@ -15,10 +15,6 @@
         color: white;
         z-index: 1;
 
-        &__title {
-            font-weight: 500;
-        }
-
         &__arrow {
             cursor: pointer;
             transform: rotate(0deg);
@@ -35,6 +31,8 @@
         color: $orange;
         padding: 20px;
         font-size: 1.1em;
+        font-weight: 400;
+        line-height: 142.6%;
         background-color: #F6F6F6;
         border-radius: 5px;
         position: relative;
@@ -57,5 +55,6 @@
     }
 }
 
-
-
+.medium {
+    font-size: 1.1em;
+}

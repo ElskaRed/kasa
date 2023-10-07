@@ -14,14 +14,14 @@ const Rate = (props) => {
               key={rate.toString()}
               className="rate__star"
               src={full}
-              alt="étoile vide"
+              alt="étoile remplie"
             />
           ) : (
             <img
               key={rate.toString()}
               className="rate__star"
               src={grey}
-              alt="étoile remplie"
+              alt="étoile vide"
             />
           )
         )}
