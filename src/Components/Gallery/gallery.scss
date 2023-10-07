@@ -1,3 +1,5 @@
+@import '../../style/var.scss';
+
 .gallery {
     border-radius: 25px;
     background-color: #F6F6F6;
@@ -8,4 +10,11 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 50px;
     justify-content: center;
+
+    @media screen and (max-width: $bp) {
+        @include flex(column, 20px);
+        padding: 0;
+        margin-top: 22px;
+        background-color: white;
+    }
 }

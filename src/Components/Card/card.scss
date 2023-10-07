@@ -5,6 +5,10 @@
     border-radius: 10px;
     position: relative;
 
+    @media screen and (max-width: $bp) {
+        height: 255px;    
+    }
+
     &__img {
         object-fit: cover;
         height: 100%;
