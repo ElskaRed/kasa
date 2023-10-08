@@ -9,6 +9,7 @@
     &__h1 {
         font-size: 18em;
         font-weight: 700;
+
     }
 
     &__h2 {
@@ -18,5 +19,23 @@
     &__retour {
         font-size: 1.12em;
         color: $orange;
+    }
+
+    @media screen and (max-width: $bp) {
+        gap: 113px;
+        padding: 113px 30px;
+
+        &__h1 {
+            font-size: 6em;
+        }  
+        
+        &__h2 {
+            font-size: 1.12em;
+            text-align: center;
+        }
+
+        &__retour {
+            font-size: 0.8em;
+        }
     }
 }
