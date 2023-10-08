@@ -19,7 +19,9 @@ const Collapse = (props) => {
                     onClick={toggleState}
                 />
             </div>
-            <div className={`collapse__text ${toggle ? 'text-down' : ''}`}>{props.text}</div>
+            <div className={`collapse__bottom ${toggle ? 'bottom-down' : ''}`}>
+                <div className={`collapse__bottom__text ${toggle ? 'text-down' : ''}`}>{props.text}</div>
+            </div>
         </div>
     );
     
