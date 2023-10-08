@@ -9,12 +9,12 @@
     z-index: 0;
 
     &__left-arrow {
-        right: 2%;
+        left: 2%;
         @include arrow;
     }
 
     &__right-arrow {
-        left: 2%;
+        right: 2%;
         @include arrow;
 
     }
@@ -35,5 +35,26 @@
         right: 48%;
         color: white;
         font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width: $bp) {
+    .carrousel {
+        height: 255px;
+        border-radius: 10px;
+
+        &__left-arrow {
+            left: 1%;
+        }
+
+        &__right-arrow {
+            right: 1%;
+        }
+    }            
+
+    .slider {
+        &__tracker {
+            opacity: 0;
+        }
     }
 }

@@ -52,6 +52,11 @@ $bp: 768px;
     top: 40%;
     z-index: 1;
     cursor: pointer;
+    @media screen and (max-width: $bp) {
+        height: 22px;  
+        width: 22px;  
+        top: 44%;    
+    }
 }
 
 @mixin flex($dir, $gap) {

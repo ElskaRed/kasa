@@ -2,4 +2,12 @@
 
 .rate {
     @include flex(row, 12px);
+
+    @media screen and (max-width: $bp) {
+        gap: 6px;
+
+        &__star {
+            height: 14px;
+        }        
+    }
 }

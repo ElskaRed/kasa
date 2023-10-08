@@ -15,25 +15,15 @@
         border-radius: 5px;
         color: white;
         z-index: 1;
-        @media screen and (max-width: $bp) {
-            padding: 10px;
-        }
 
         &__title {
             font-size: 1.5em;
-
-            @media screen and (max-width: $bp) {
-                font-size: 0.8em;
-            }
         }
 
         &__arrow {
             cursor: pointer;
             transform: rotate(0deg);
             transition: transform 0.4s ease-in-out;
-            @media screen and (max-width: $bp) {
-                height: 11px;
-            }
         }
 
         &__arrow.arrow-down {
@@ -59,10 +49,6 @@
         overflow: hidden;
         transform: translateY(-30px);
         transition: max-height 0.6s ease-in-out, opacity 0.5s ease-in, transform 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
-
-        @media screen and (max-width: $bp) {
-            font-size: 0.75em;    
-        }
     }
 
     &__text.text-down {
@@ -72,8 +58,26 @@
         transform: translateY(0);
         margin-bottom: 30px;
     }
+
+    @media screen and (max-width: $bp) {
+        &__top {
+            padding: 10px;
+
+            &__arrow {
+                height: 11px;
+            }
+        }
+
+        &__text {
+            font-size: 0.75em;
+        }
+        
+    }
 }
 
 .medium {
     font-size: 1.1em;
+    @media screen and (max-width: $bp) {
+        font-size: 0.8em;
+    }
 }

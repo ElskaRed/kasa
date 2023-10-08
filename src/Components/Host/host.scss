@@ -17,4 +17,17 @@
         height: 64px;
         border-radius: 50%;
     }
+
+    @media screen and (max-width: $bp) {
+        gap: 10px;
+
+        &__name {
+            font-size: 0.75em;
+        }      
+        
+        &__picture {
+            width: 32px;
+            height: 32px;
+        }
+    }
 }

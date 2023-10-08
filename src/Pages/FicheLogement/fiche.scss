@@ -52,10 +52,6 @@
 
 .collapses {
     @include flex(row, 76px);
-
-    &__comp {
-        font-size: 1.1em;
-    }
 }
 
 .equiplist {
@@ -64,4 +60,52 @@
     &__line {
         font-weight: 400;
     }
+}
+
+@media screen and (max-width: $bp) {
+    .fiche__details {
+        margin-top: 10px;
+    }
+
+    .infos {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 18px;
+
+        &__lieu {
+            gap: 12px; 
+            &__title {
+                font-size: 1.1em;
+            }
+
+            &__location {
+                font-size: 0.8em;
+            }
+
+            &__tags {
+                font-size: 0.62em;
+                margin-top: 0;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+        }
+
+        &__bonus {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+    }   
+    
+    .tag {
+        border-radius: 5px;
+    }
+
+    .collapses {
+        flex-direction: column;
+        gap: 0;
+    }
+    
 }

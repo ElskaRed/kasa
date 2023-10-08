@@ -8,18 +8,16 @@
     margin: 0 auto;
     max-width: 1440px;
 
-    @media screen and (max-width: $bp) {
-        padding: 20px;    
-    }
-
     &__logo {
         width: 210px;
-
-        @media screen and (max-width: $bp) {
+    }
+     
+    @media screen and (max-width: $bp) {
+        padding: 20px;  
+        
+        &__logo {
             width: 145px;
         }
     }
-     
-
 
 }

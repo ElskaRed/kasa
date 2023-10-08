@@ -23,7 +23,7 @@ const Carrousel = ({ slides }) => {
                     src={previous}
                     alt="flèche gauche"
                     onClick={previousSlide}
-                    className="carrousel__left-arrow"
+                    className="carrousel__right-arrow"
                 />
             )}
 
@@ -32,7 +32,7 @@ const Carrousel = ({ slides }) => {
                     src={next}
                     alt="flèche droite"
                     onClick={nextSlide}
-                    className="carrousel__right-arrow"
+                    className="carrousel__left-arrow"
                 />
             )}
 

@@ -47,13 +47,11 @@ const FicheLogement = () => {
                 </div>
                 <div className="collapses">
                     <Collapse 
-                        className="collapses__comp"
                         title="Description"
                         text={ficheLogement?.description}
                         class="medium"
                     />
                     <Collapse 
-                        className="collapses__comp"
                         title="Équipements"
                         text={listeEquipements}
                         class="medium"
