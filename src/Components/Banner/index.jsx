@@ -1,5 +1,7 @@
 import './banner.scss';
 
+// Composant bannière appelé dans la page d'accueil et dans la page à propos.
+
 const Banner = (props) => {
     return (
         <div className="banner">

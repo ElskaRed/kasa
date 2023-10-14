@@ -1,0 +1,30 @@
+.host {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-end;
+}
+.host__name {
+  color: #FF6060;
+  width: 40%;
+  text-align: end;
+  font-size: 1.1em;
+}
+.host__picture {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+@media screen and (max-width: 768px) {
+  .host {
+    gap: 10px;
+  }
+  .host__name {
+    font-size: 0.75em;
+  }
+  .host__picture {
+    width: 32px;
+    height: 32px;
+  }
+}/*# sourceMappingURL=host.css.map */

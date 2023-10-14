@@ -1,11 +1,11 @@
 .footer {
-  background-color: black;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 28px;
+  background-color: black;
+  align-items: center;
   padding: 60px 0px 30px 0px;
-  margin-top: auto;
+  height: 209px;
 }
 .footer__logo {
   width: 122px;
@@ -13,4 +13,14 @@
 .footer__text {
   color: white;
   font-size: 1.5em;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    gap: 15px;
+  }
+  .footer__text {
+    font-size: 0.75em;
+    width: 133px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=footer.css.map */

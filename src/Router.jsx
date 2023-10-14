@@ -5,6 +5,8 @@ import Error from './Pages/Error';
 import FicheLogement from './Pages/FicheLogement';
 import App from './App';
 
+// Composant réunissant les routes de React Router
+
 const Router = createBrowserRouter(
     [
         {

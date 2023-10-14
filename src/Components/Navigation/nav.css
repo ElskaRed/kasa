@@ -7,6 +7,14 @@
   text-decoration: none;
   font-size: 1.5em;
 }
-.navigation--home:hover, .navigation--about:hover {
+.navigation--home.active, .navigation--about.active {
   text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+  .navigation {
+    gap: 26px;
+  }
+  .navigation--home, .navigation--about {
+    font-size: 0.75em;
+  }
 }/*# sourceMappingURL=nav.css.map */

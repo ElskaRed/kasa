@@ -1,6 +1,8 @@
 import logo from '../../assets/images/logo-footer.png'
 import './footer.scss'
 
+//Footer directement placé dans le layer de l'application, dans le composant App.
+
 const Footer = () => {
     return(
         <div className="footer">

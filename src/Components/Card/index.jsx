@@ -1,5 +1,7 @@
 import './card.scss';
 
+// Composant Card appelé dans le composant Gallery
+
 const Card = ({image, title}) => {
     return (
         <article className="card">

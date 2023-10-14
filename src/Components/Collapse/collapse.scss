@@ -23,12 +23,12 @@
         &__arrow {
             cursor: pointer;
             transform: rotate(0deg);
-            transition: transform 0.4s ease-in-out;
+            transition: transform 0.4s ease-in-out; //Animation de transform pour remettre la flèche à l'endroit
         }
 
         &__arrow.arrow-down {
             transform: rotate(-180deg);
-            transition: transform 0.4s ease-in-out;
+            transition: transform 0.4s ease-in-out; //Animation de transform pour faire pivoter la flèche vers le bas
         }
     }
 
@@ -47,11 +47,15 @@
         transform: translateY(-35px);
         max-height: 0px;
         transition: max-height 1.7s -0.8s, padding-top 0.4s 0.1s;
+        //Animation inverse du commentaire suivant
+
         
         &.bottom-down {
             max-height: 1000px;
             padding-top: 55px;
             transition: max-height 1.7s, padding-top 0.4s;
+            //On anime max-height pour faire grandir la div qui encadre le texte, et on ajoute un padding-top nécessaire
+            //pour compenser le translateY(-35px) vers le haut, qui lui était nécessaire pour masquer ce qui était toujours apparent de la div.
         }
 
         &__text {
@@ -62,11 +66,15 @@
             opacity: 0;
             transform: translateY(-115%);
             transition: transform 0.6s, opacity 0.2s 0.6s;
+            //Animation inverse du commentaire suivant
+            
 
             &.text-down {
                 transform: translateY(0);
                 transition: transform 0.6s, opacity 0.2s;
                 opacity: 1;
+                //On anime le texte à part de la div qui grandit afin de lui donner l'effet de glissement vers le bas
+                //On ajoute un effet d'opacité qui passe de 0 à 1 car il y a un léger dépassement de base, donc ça permet de bien camoufler.
             }
         }
     }
@@ -87,6 +95,8 @@
     }
 }
 
+
+//Class spécifiquement utilisée dans la page FicheLogement car les font-size diffèrent dans cette condition précise, indépendamment de la taille de l'écran.
 .medium {
     font-size: 1.1em;
     @media screen and (max-width: $bp) {

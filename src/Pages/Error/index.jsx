@@ -1,6 +1,8 @@
 import './error.scss';
 import { Link } from "react-router-dom";
 
+// Page 404
+
 function Error() {
     return (
         <div className="error">

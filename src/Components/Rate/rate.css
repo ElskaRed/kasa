@@ -1,0 +1,13 @@
+.rate {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+@media screen and (max-width: 768px) {
+  .rate {
+    gap: 6px;
+  }
+  .rate__star {
+    height: 14p;
+  }
+}/*# sourceMappingURL=rate.css.map */

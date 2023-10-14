@@ -9,12 +9,12 @@
     z-index: 0;
 
     &__left-arrow {
-        left: 2%;
+        right: 2%;
         @include arrow;
     }
 
     &__right-arrow {
-        right: 2%;
+        left: 2%;
         @include arrow;
 
     }

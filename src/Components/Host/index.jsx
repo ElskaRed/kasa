@@ -1,5 +1,7 @@
 import './host.scss';
 
+//Composant Host appelé dans la page FicheLogement.
+
 const Host = (props) => {
     return(
         <div className="host">
