@@ -62,10 +62,10 @@
     border-radius: 10px;
   }
   .carrousel__left-arrow {
-    left: 1%;
+    right: 1%;
   }
   .carrousel__right-arrow {
-    right: 1%;
+    left: 1%;
   }
   .slider__tracker {
     opacity: 0;
